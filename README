@@ -1,0 +1,55 @@
+A data science project focused on analyzing and predicting the **Air Quality Index (AQI)** using machine learning. This project leverages Python and various data science libraries to gain insights into pollution trends and forecast AQI levels across Indian cities.
+
+## 📌 Features
+
+- **Data preprocessing and cleaning** - Handling missing values and outliers
+- **Exploratory data analysis (EDA)** - Comprehensive visualization of pollution trends
+- **Linear regression modeling** - Baseline prediction model
+- **XGBoost regression modeling** - Advanced ensemble technique
+- **Model evaluation metrics** - MSE, MAE, R² score comparisons
+- **Streamlit web interface** - Interactive dashboard for predictions
+
+## 📦 Libraries Used
+
+### Core Data Processing
+- `pandas` - Data manipulation and analysis
+- `numpy` - Numerical computing
+
+### Data Visualization
+- `matplotlib` - Basic plotting and visualization
+- `seaborn` - Statistical data visualization
+
+### Machine Learning
+- `scikit-learn`:
+  - `train_test_split` - Data splitting for train/test sets
+  - `LinearRegression` - Linear regression model
+  - `mean_squared_error`, `mean_absolute_error`, `r2_score` - Model evaluation metrics
+  - `StandardScaler` - Feature scaling
+  - `datasets` - Sample datasets
+- `xgboost` - `XGBRegressor` for boosted tree regression
+
+### Web Application
+- `streamlit` - Web interface for the application
+
+## 📁 Project Structure
+
+```bash
+air-quality-index-prediction/
+│
+├── data/
+│   └── city_day.csv                 # Raw dataset from Kaggle
+│
+├── notebooks/
+│   ├── data_analysis.ipynb          # EDA and data preprocessing
+│   └── model_training.ipynb         # ML model development and evaluation
+│
+├── src/
+│   ├── utils.py                     # Helper functions for data cleaning and visualization
+│   ├── model.py                     # Model training and prediction scripts
+│
+├── outputs/
+│   ├── plots/                       # Generated graphs and charts
+│   └── models/                      # Trained model files (Pickle, etc.)
+│
+├── requirements.txt                 # List of required Python packages
+└── README.md                        # Project documentation
